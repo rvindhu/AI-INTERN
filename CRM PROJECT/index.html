@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Data</title>
+</head>
+<body>
+    <h1>Customer Data</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="C:\Users\rvind\Desktop\AI\hubspot-crm-exports-all-contacts-2024-04-06.csv">Download CSV</a>
+    
+</body>
+</html>
